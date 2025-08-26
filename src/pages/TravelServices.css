@@ -1,0 +1,99 @@
+.travel-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background: linear-gradient(to right, #b3d1e0, #6a9fb5);
+  color: #000000;
+}
+
+.travel-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.car-info img {
+  display: block;
+  margin: 0 auto 10px auto;
+  width: 50%;
+  border-radius: 10px;
+}
+
+form label {
+  display: block;
+  margin: 12px 0 6px;
+}
+
+form input,
+form select {
+  width: 95%;
+  padding: 10px;
+  border: #285e6b;
+  border-radius: 9px;
+}
+
+form button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background: #285e6b;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  width: 50%;
+  display: block;
+  margin: 20px auto;
+}
+
+.travel-offers {
+  background: #f5f9fa;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border-left: 5px solid #6a9fb5;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  color: #004964;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.travel-offers p {
+  margin: 4px 0;
+}
+
+/* ===== Responsive Styles ===== */
+
+/* Small devices (mobile) */
+@media (max-width: 480px) {
+  .travel-container {
+    margin: 15px;
+    padding: 15px;
+  }
+  .car-info img {
+    width: 80%;
+  }
+  form button {
+    width: 100%;
+  }
+}
+
+/* Medium devices (tablet) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .travel-container {
+    margin: 20px;
+    padding: 18px;
+  }
+  .car-info img {
+    width: 60%;
+  }
+  form button {
+    width: 80%;
+  }
+}
+
+/* Large screens (desktop) */
+@media (min-width: 1024px) {
+  .travel-container {
+    max-width: 700px;
+  }
+  .car-info img {
+    width: 45%;
+  }
+}

@@ -1,0 +1,109 @@
+/* Navbar */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 0.75rem 1.5rem;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  width: 100%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.10);
+}
+
+.navbar:hover {
+  background: linear-gradient(to right, #6a9fb5, #b3d1e0);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1450px;
+  margin: 0 auto;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  padding-right: 400px;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* Nav Menu */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 10px 0;
+  /* align-items: center; */
+}
+
+.nav-menu li a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.1rem;
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+  /* margin-right: 20px; */
+}
+
+/* Underline Animation */
+.nav-menu li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #004964;
+  transition: width 0.3s ease;
+}
+
+.nav-menu li a:hover::after {
+  width: 100%;
+}
+
+/* Responsive - Mobile */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background-color: #708d91a7;
+    padding: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu li {
+    padding: 0.75rem 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar-logo {
+    font-size: 1.2rem;
+    margin-left: 10px;
+  }
+}

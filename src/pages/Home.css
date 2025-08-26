@@ -1,0 +1,457 @@
+.home {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Hero section */
+.hero-section {
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0);
+  z-index: 1;
+}
+.hero-text {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Show text when hovering over hero-section */
+.hero-section:hover .hero-text {
+  opacity: 1;
+  background-color: #000000c9;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+}
+/* Content section */
+.home-content {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.home-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #004d40;
+  text-align: left;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.home-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Highlights section */
+.highlights {
+  background-color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.highlight-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+/* Tips section */
+.tips-section {
+  padding: 40px 20px;
+  background-color: #f1f8e9;
+  text-align: center;
+}
+
+.tips-section h2 {
+  color: #558b2f;
+  margin-bottom: 20px;
+}
+
+.tips-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #4e4e4e;
+}
+/* Visit Section - 2 column layout */
+.visit-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  gap: 40px;
+  /* justify-content: space-between; */
+}
+
+.visit-left {
+  flex: 1 1 60%;
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.8;
+}
+
+.visit-right {
+  flex: 1 1 30%;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.weather-box {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 30px 30px;
+  border-radius: 8px;
+  border: 1px solid #007b8f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  width: 150%;
+  height: 500px;
+}
+
+.weather-box h4 {
+  font-size: 1.2rem;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.weather-label {
+  font-weight: bold;
+  color: #adadad;
+  margin-bottom: 10px;
+}
+
+.temp {
+  font-size: 2rem;
+  color: #007b8f;
+}
+
+.condition {
+  font-style: italic;
+  color: #666;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.map-img {
+  width: 90%;
+  height: 50%;
+  margin-top: 50px;
+}
+
+.reach-section {
+  padding: 40px 0px;
+  background-color: #f9f9f9;
+  box-shadow: #00796b87 -0px -0px 1px 2px;
+  border-radius: 20px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.reach-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.reach-item {
+  flex: 1;
+  min-width: 280px;
+}
+
+.reach-item h2 {
+  font-size: 24px;
+  color: #060606;
+  margin-bottom: -10px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #f4c400;
+}
+.reach-item h3 {
+  font-size: 24px;
+  color: #969696;
+  margin-bottom: 15px;
+}
+
+.reach-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  line-height: 1.4;
+}
+.nearby-section {
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.nearby-section h2 {
+  font-size: 28px;
+  color: #004d40;
+  text-align:left;
+  margin-left: 12%;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.nearby-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.nearby-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #007b8f;
+  box-shadow: 0 4px 10px rgba(161, 255, 228, 0.392);
+  width: 350px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.nearby-card:hover {
+  transform: translateY(-5px);
+}
+
+.nearby-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.nearby-card .card-content {
+  padding: 20px;
+}
+
+.nearby-card h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.nearby-card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+.nearby-note {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 16px;
+  color: #333;
+  font-style: italic;
+}
+
+.auth-overlay {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  /* background-color: rgba(255, 255, 255, 0.564); */
+  background-color: rgba(232, 248, 234, 0.829);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 888;
+}
+
+.auth-box h2 {
+  margin-bottom: 10px;
+  color: #080808;
+}
+
+.auth-box p {
+  font-size: 16px;
+  color: #000000;
+}
+
+.btn-login {
+  display: inline-block;
+  margin-top: 15px;
+  background-color: #000000c4;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+
+
+
+
+/* For tablets (width ≤ 768px) */
+@media (max-width: 768px) {
+  .reach-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .reach-item h2 {
+    font-size: 20px;
+  }
+
+  .reach-icon {
+    font-size:01px;
+  }
+
+  .reach-content {
+    font-size: 16px;
+  }
+}
+
+
+
+/* Responsive */
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .highlight-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .visit-section {
+    flex-direction: column;
+  }
+
+  .visit-left, .visit-right {
+    flex: 1 1 100%;
+  }
+
+  .weather-box {
+    width: 100%;
+  }
+}
+/* For mobile phones (width ≤ 480px) */
+@media (max-width: 480px) {
+  .reach-item {
+    min-width: 100%;
+  }
+
+  .reach-item h2 {
+    font-size: 18px;
+  }
+
+  .reach-content {
+    font-size: 15px;
+    flex-direction: column;
+  }
+
+  .reach-icon {
+    margin-bottom: 5px;
+    font-size: 2px;
+  }
+}
+/* Media Queries */
+@media (max-width: 768px) {
+  .nearby-card {
+    width: 100%;
+  }
+
+  .nearby-section h2 {
+    font-size: 32px;
+    margin-left: 2px;
+  }
+
+  .nearby-card h3 {
+    font-size: 18px;
+  }
+}
+/* Step 1: Add this CSS code */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.visible.fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+.visible.slide-in-left {
+  animation: slideInLeft 1s ease forwards;
+}
+
+.visible.slide-in-right {
+  animation: slideInRight 1s ease forwards;
+}
